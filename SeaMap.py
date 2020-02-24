@@ -61,7 +61,7 @@ class SeaMap:
                 raise Exception('Incorrect shape of ship #2')
             # when a vertical ship tries to be horizontal too
             elif index - 1 in self.vertical_ships:
-                raise Exception('Incorrect shape of ship #2')
+                raise Exception('Incorrect shape of ship #3')
 
     def __process_empty_cell(self, index):
         # end of vertical ship

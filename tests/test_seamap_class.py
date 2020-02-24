@@ -19,8 +19,7 @@ def test_correct_map(map_path, ship, sea, expected):
     ('maps/incorrect_map_3.txt', '#', '-', Exception),
     ('maps/incorrect_map_4.txt', '#', '-', Exception),
     ('maps/correct_map_1.txt', 'bad_seq', '-', Exception),
-    ('maps/correct_map_1.txt', '-', '!', Exception),
-    ('bad_path_to_map', '#', '-', Exception)
+    ('maps/correct_map_1.txt', '-', '!', Exception)
 ])
 def test_incorrect_map(map_path, ship, sea, expected):
     with pytest.raises(expected):
